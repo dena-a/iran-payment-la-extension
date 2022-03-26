@@ -11,7 +11,7 @@ class LaravelAdminExtensionServiceProvider extends ServiceProvider
      */
     public function boot(LaravelAdminExtension $extension)
     {
-        if (!LaravelAdmin::boot()) {
+        if (!LaravelAdminExtension::boot()) {
             return;
         }
 
