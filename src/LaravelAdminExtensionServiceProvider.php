@@ -15,10 +15,6 @@ class LaravelAdminExtensionServiceProvider extends ServiceProvider
             return;
         }
 
-        if ($this->app->config('admin.extensions.iranpayment.enable', false)) {
-            $this->app->booted(function () {
-                LaravelAdminExtension::routes(__DIR__.'/../routes/web.php');
-            });
-        }
+        $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'iranpayment');
     }
 }

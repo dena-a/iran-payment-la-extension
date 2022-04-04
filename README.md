@@ -9,18 +9,21 @@ IranPayment extension for laravel-admin
 * [Laravel](https://www.laravel.com) (or [Lumen](https://lumen.laravel.com)) >= 5.7
 
 ## Installation
-1. Add the package to your composer file via the `composer require` command:
 
-   ```bash
-   $ composer require dena-a/iran-payment-la-extension:^1.0
-   ```
+Add the package to your composer file via the `composer require` command:
 
-   Or add it to `composer.json` manually:
+```bash
+$ composer require dena-a/iran-payment-la-extension:^1.0
+```
 
-   ```json
-   "require": {
-       "dena-a/iran-payment-la-extension": "^1.0"
-   }
+Or add it to `composer.json` manually:
+
+```json
+{
+    "require": {
+        "dena-a/iran-payment-la-extension": "^1.0"
+    }
+}
    ```
 
 ## Configuration
@@ -33,10 +36,21 @@ Open `config/admin.php` and add the following configuration to the `extensions` 
     'iranpayment' => [
         // Set to `false` if you want to disable this extension
         'enable' => true,
+        'uri' => '/iranpayments',
     ]
     
 ]
 ```
+
+### Import menu item
+
+```bash
+$ php artisan admin:import iranpayment
+```
+
+### Permissions
+
+Check and update the permissions to access the IranPayment extension.
 
 ## Contribute
 
@@ -44,7 +58,7 @@ Contributions are always welcome!
 
 ## Support
 
-If you believe you have found a bug, please report it using the [GitHub issue tracker](https://github.com/dena-a/iran-payment/issues),
+If you believe you have found a bug, please report it using the [GitHub issue tracker](https://github.com/dena-a/iran-payment-la-extension/issues),
 or better yet, fork the library and submit a pull request.
 
 ## License
