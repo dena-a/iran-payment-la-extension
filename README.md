@@ -5,7 +5,7 @@ IranPayment extension for laravel-admin
 
 * PHP >= 7.4
 * [IranPayment](https://www.github.com/dena-a/iran-payment) >= 2.0
-* [LaravelAdmin](https://www.github.com/z-song/laravel-admin) >= 1.8
+* [LaravelAdmin](https://www.github.com/z-song/laravel-admin) >= 1.6
 * [Laravel](https://www.laravel.com) (or [Lumen](https://lumen.laravel.com)) >= 5.7
 
 ## Installation
